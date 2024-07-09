@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <header>
+
+      <nav class="navigation">
+        <p class="logo">RECIPE SEARCH</p>
+        <div class="search-div">
+          <input
+            class="search-input"
+            placeholder="Search for meal"
+            type="search"
+          />
+          <button class="search-btn">&#128269;</button>
+        </div>
+      </nav>
+    </header> -->
+    <header>
+      <nav class="navigation">
+        <p class="logo">RECIPE SEARCH</p>
+        <div class="search-div">
+          <input class="search-input search-by-name" placeholder="Search for meal" type="search" />
+          <input class="search-by-id hidden" placeholder="Search by ID" type="search" />
+          <div>
+            <input type="radio" id="searchByName" name="searchType" value="name" checked>
+            <label class="name-label" for="searchByName">Name</label>
+            <input type="radio" id="searchById" name="searchType" value="id">
+            <label class="id-label" for="searchById">ID</label>
+          </div>
+
+          <button class="search-btn">&#128269;</button>
+          <button class="search-by-id-btn hidden">&#128269;</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main container">
+      <section class="meals-section">
+        <!-- <div class="meal">
+          <img
+            class="meal-img"
+            src="img/traditional-russian-cabbage-soup-shchi-recipe-1135534-Hero_01-bd312ca096914402b392af18ad584790.jpg"
+            alt="meal-image"
+          />
+          <div class="meal-info">
+            <h3 class="meal-name">Russian Soup</h3>
+            <p class="meal-category">Lunch</p>
+            <p class="meal-area">Russian</p>
+            <button class="meal-btn">Add to cart</button>
+          </div>
+        </div> -->
+      </section>
+    </main>
+    <div class="absolute-div hidden">
+      <!-- <img
+        src="/img/traditional-russian-cabbage-soup-shchi-recipe-1135534-Hero_01-bd312ca096914402b392af18ad584790.jpg"
+        alt=""
+        class="popup-img"
+      />
+      <div class="popup-info">
+        <div class="top-side">
+          <h2 class="meal-name">Russian Soup</h2>
+          <ul class="recepie-list">
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+
+            <li class="list-item">
+              <p class="ingredient">Potato -</p>
+              <span class="measure">1 table spoon</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-side">
+          <h2 class="recepie">Recepie</h2>
+          <p class="recepie-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+            qui asperiores vitae voluptate iure autem aperiam! Excepturi,
+            incidunt placeat facere ducimus molestiae fugiat similique rerum.
+            Maiores neque alias autem quam.
+          </p>
+          <div class="btn-div">
+            <button onclick="togglePopup()" class="close-btn">Close</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
