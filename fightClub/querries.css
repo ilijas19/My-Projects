@@ -1,0 +1,285 @@
+@media (max-width: 1400px) {
+  .service-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1253px) {
+  .about-us-video video {
+    width: 80%;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .about-us-text {
+    font-size: 2rem;
+  }
+  .map {
+    grid-row: 1;
+    margin-top: 2rem;
+    width: 25rem; /* Set the width as needed */
+    height: 25rem; /* Set the height as needed */
+    overflow: hidden; /* Ensure iframe doesn't overflow */
+    position: relative; /* Set relative position for containing the iframe */
+  }
+  .map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute; /* Set absolute positioning to fit the map div */
+    top: 0;
+    left: 0;
+  }
+}
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+  .contact-info {
+    font-size: 1.7rem !important;
+  }
+  .info-text {
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 1090px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .slider-wrapper .slide-button {
+    display: none !important;
+  }
+  .slider-wrapper .image-list {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 280px;
+    height: 380px;
+  }
+  .slider-scrollbar .scrollbar-thumb {
+  }
+}
+@media (max-width: 940px) {
+  .trainer-name {
+    font-size: 2rem;
+  }
+  html {
+    font-size: 48%;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+    padding-left: 3rem;
+  }
+  .menu {
+    display: none;
+  }
+  .become-member-btn {
+    display: none;
+  }
+  .menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: rem;
+  }
+  .about-us-section {
+    padding-left: 10rem;
+  }
+  .trainers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap; /* Ensures that items wrap to the next line if there's not enough space */
+  }
+  .trainer {
+    width: 35rem;
+  }
+  /* .popup-section {
+    right: -0rem;
+    width: 35rem;
+    transition: all 0.4s;
+  } */
+  .trainers-section {
+  }
+}
+@media (max-width: 770px) {
+  .schedule-table {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .service-section {
+    grid-template-columns: 1fr;
+  }
+  .info-text {
+    display: none;
+  }
+  .about-us-section {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .about-us-div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .about-us-text {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .about-us-video {
+    margin-top: 4rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #dddddd;
+  }
+  .read-more-btn {
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    transition: all 0.4s;
+    cursor: pointer;
+    font-weight: 600;
+    align-self: center;
+  }
+  .read-more-btn:hover {
+    background-color: #fab005;
+    color: #000;
+  }
+}
+
+@media (max-width: 610px) {
+  .navigation {
+    padding-right: 1rem;
+  }
+  .become-member-btn {
+    align-self: center;
+  }
+  th {
+    font-size: 1.5rem;
+  }
+  td {
+    font-size: 1.2rem;
+  }
+
+  .training-schedule {
+    height: 70rem;
+  }
+  table {
+    overflow-x: auto;
+  }
+  .read-more-btn {
+    font-size: 1.5rem;
+  }
+  .first-divider {
+    font-size: 3rem !important;
+  }
+  footer {
+    display: block; /* Ensure footer is displayed on small screens */
+  }
+}
+
+@media (max-width: 584px) {
+  .service-section {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  html {
+    font-size: 45%;
+  }
+}
+@media (max-width: 540px) {
+  .divider-section-ponuda {
+    display: none;
+  }
+  .first-divider {
+    display: block;
+  }
+  .social-last {
+    display: none;
+  }
+  .service-section {
+    gap: 3rem;
+  }
+}
+@media (max-width: 444px) {
+  .contact-info {
+    padding-top: 1rem;
+    font-size: 1.4rem !important;
+  }
+  .find-us-text {
+    font-size: 1.4rem !important;
+  }
+  .trainer {
+    width: 30rem;
+  }
+  .trainer-img {
+    height: 30rem;
+  }
+  .service-section {
+    padding-left: 7rem;
+    padding-right: 7rem;
+    gap: 3rem;
+  }
+  .trainer-name {
+  }
+  .trainer-text {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+}
+@media (max-width: 380px) {
+  .service-section {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .contact-info {
+    padding-top: 1rem;
+    font-size: 1.3rem !important;
+  }
+  .find-us-text {
+    font-size: 1.3rem !important;
+  }
+  .social-last {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .service-section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .trainers-container {
+    gap: 2rem;
+  }
+}
+@media (max-width: 260px) {
+  .social-3 {
+    display: none;
+  }
+  .find-us-div {
+    display: flex;
+    justify-content: center;
+  }
+}
