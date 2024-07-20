@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Rent a Car</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <header id="header-placeholder">
+      <!-- <nav class="navigation">
+      <div class="top-nav-div">
+        <p class="call-center">CALL CENTER: +381 60 3535 908</p>
+      </div>
+      <div class="bot-nav-div">
+        <div class="logo-div">
+          <p class="logo color333">IG RENT A CAR</p>
+        </div>
+        <div class="menu-div">
+          <ul class="menu">
+            <li><a class="menu-item" href="#home">Home</a></li>
+            <li><a class="menu-item" href="#contact">Contact</a></li>
+            <li><a class="menu-item" href="ourCars.html">Our Cars</a></li>
+            <li><a class="menu-item" href="#about-us">About Us</a></li>
+          </ul>
+          <a class="last-child" href="ourCars.html">Rent Now</a>
+          <a class="phone-menu">Menu</a>
+        </div>
+      </div>
+    </nav> -->
+    </header>
+
+    <div class="map-container">
+      <section class="map-section">
+        <article class="form-div">
+          <p class="error"></p>
+          <form class="reservation-form" action="">
+            <h3 class="heading-tertiary" style="margin-top: 1rem">
+              Reservation
+            </h3>
+            <p class="car-name"></p>
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input
+              class="phone-num"
+              type="number"
+              name="phone"
+              placeholder="Phone"
+            />
+            <input
+              class="phone-confirm"
+              type="number"
+              name="phone"
+              placeholder="Confirm Phone"
+            />
+            <button class="confirm-btn">Confirm</button>
+          </form>
+        </article>
+        <div class="map-div" id="map"></div>
+      </section>
+    </div>
+
+    <footer class="footer" id="footer-placeholder"></footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

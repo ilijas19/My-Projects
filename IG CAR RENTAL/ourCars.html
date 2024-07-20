@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Rent a Car</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <header id="header-placeholder">
+      <!-- <nav class="navigation">
+        <div class="top-nav-div">
+          
+
+          <p class="call-center">CALL CENTER: +381 60 3535 908</p>
+        </div>
+
+        <div class="bot-nav-div">
+          <div class="logo-div">
+            <p class="logo color333">IG RENT A CAR</p>
+          </div>
+          <div class="menu-div">
+            <ul class="menu">
+              <li><a class="menu-item" href="#home">Home</a></li>
+              <li><a class="menu-item" href="#contact">Contact</a></li>
+              <li><a class="menu-item" href="ourCars.html">Our Cars</a></li>
+              <li><a class="menu-item" href="#about-us">About Us</a></li>
+            </ul>
+            <a class="last-child" href="ourCars.html">Rent Now</a>
+            <a class="phone-menu">Menu</a>
+          </div>
+        </div>
+      </nav> -->
+    </header>
+
+    <div class="container">
+      <main>
+        <section class="our-cars-section">
+          <h2 class="section-name">Our Cars</h2>
+
+          <div class="car-filter">
+            <label for="car-brand" style="font-size: 1.4rem"
+              >Sort by brand:
+            </label>
+            <select class="select" id="car-brand" onchange="filterCars()">
+              <option value="all">All</option>
+              <option value="BMW">BMW</option>
+              <option value="mercedes">Mercedes-Benz</option>
+              <option value="Volkswagen">Volkswagen</option>
+              <option value="Tesla">Tesla</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </div>
+
+          <article class="our-cars"></article>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer" id="footer-placeholder"></footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
