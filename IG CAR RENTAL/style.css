@@ -1,0 +1,655 @@
+/* PALLETE
+
+SIZES;
+
+
+COOLORS;
+
+*/
+
+/* GLOBAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #fff;
+}
+.hidden {
+  display: none;
+}
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+}
+main {
+  margin-top: 2rem;
+}
+.color333 {
+  color: #202020 !important;
+  font-weight: bold;
+}
+.icon {
+  height: 3rem;
+  width: 3rem;
+}
+.heading-primary {
+  font-size: 5rem;
+  color: #5300bc;
+  font-weight: 500;
+}
+.section-name {
+  font-size: 4rem;
+  color: #5300bc;
+  font-weight: 500;
+}
+.heading-secondary {
+  text-align: center;
+  font-size: 3rem;
+  color: #5300bc;
+}
+.heading-tertiary {
+  color: #5300bc;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-end {
+  text-align: end;
+}
+/* NAVIGATION */
+.navigation {
+  position: fixed;
+  width: 100%;
+  padding: 0 0.5rem;
+  z-index: 999;
+  background-color: #fff;
+  top: 0;
+}
+.logo-div {
+  margin-top: -1rem;
+
+  padding-left: 2rem;
+}
+.top-nav-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.call-center {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 1.3rem;
+
+  padding: 0.5rem;
+  color: #333;
+  transition: all 0.4s;
+}
+.call-center:hover {
+  color: #5300bc;
+}
+.logo {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.bot-nav-div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #5300bc;
+  /* box-shadow: 0 0 0 1px #5100bc52; */
+}
+.menu-div {
+  display: flex;
+  justify-content: flex-end;
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+.menu-item {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+.last-child {
+  padding: 0 1rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5300bc;
+  border-bottom: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: #5300bc;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.last-child:hover {
+  background-color: #5300bc;
+  color: #fff;
+}
+.phone-menu {
+  padding: 0.5rem 1.5rem;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5300bc;
+  border-bottom: none;
+  margin-left: 1.5rem;
+  font-weight: 600;
+  color: #5300bc;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: none;
+}
+.phone-menu:hover {
+  background-color: #5300bc;
+  color: #fff;
+}
+/* home section */
+.home-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.home-article {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+.home-article-img {
+  display: flex;
+  justify-content: center;
+}
+.home-img {
+  width: 80%;
+  height: 45rem;
+  object-fit: cover;
+}
+.home-article-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.home-text {
+  color: #333;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.rent-btn-div {
+  width: 100%;
+  border-bottom: 1px solid #5300bc;
+}
+.rent-now-btn {
+  border: 1px solid #5300bc;
+  border-bottom: none;
+  background-color: #fff;
+  color: #5300bc;
+  font-size: 1.8rem;
+
+  font-weight: 600;
+  padding: 1.2rem 2.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.rent-now-btn:hover {
+  background-color: #5300bc;
+  color: #fff;
+}
+/* featured cars section */
+.explore-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+.explore-cars {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  row-gap: 5rem;
+}
+.car {
+  width: 60%;
+}
+.car-img {
+  width: 100%;
+  height: 33rem;
+  object-fit: contain;
+  padding-bottom: 4rem;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.car-img:hover {
+  scale: 1.05;
+}
+.car-text {
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.car-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #5300bc;
+}
+
+.car-id {
+  font-size: 1.4rem;
+  color: #333;
+  font-weight: 500;
+}
+.rent-car-div {
+  border-bottom: 2px solid #333;
+  width: 100%;
+  text-align: center;
+}
+.rent-btn {
+  cursor: pointer;
+}
+.rent-car-btn {
+  border: 2px solid #333;
+  border-bottom: none;
+
+  background-color: #fff;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.rent-car-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.see-all-btn {
+  margin-top: 7rem;
+  align-self: center;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  background-color: #333;
+
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.4s;
+  cursor: pointer;
+  border: none;
+}
+.see-all-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+.see-all-btn:hover {
+  scale: 1.05;
+}
+
+/* ABOUT US SECTION */
+.about-us-section {
+  margin-top: 8.6rem;
+  padding: 0 5rem;
+}
+
+.about-us {
+  margin-top: 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-text-div {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.about-us-text {
+  color: #333;
+  font-weight: 500;
+  font-size: 2.2rem;
+  width: 100%;
+}
+.about-us-img {
+  margin-left: 4rem;
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.contact-btn-div {
+  display: flex;
+  border-bottom: 1px solid #5300bc;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.contact-us-btn {
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #fff;
+  color: #5300bc;
+  border: 1px solid #5300bc;
+  border-bottom: none;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.contact-us-btn:hover {
+  background-color: #5300bc;
+  color: #fff;
+}
+
+/* FOOTER SECTION */
+.footer {
+  margin-top: 9.6rem;
+
+  padding-bottom: 2rem;
+}
+
+.footer-section {
+  margin-top: 2rem;
+  border: 2px solid #5300bc;
+  display: grid;
+  border-left: none;
+  border-right: none;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  width: 100%;
+  height: auto; /* Changed from fixed height to auto to fit content */
+  padding: 1rem; /* Added padding for better spacing */
+  border-right: 1px solid #5300bc;
+}
+
+.box-3 {
+  border-right: none;
+  border-left: none;
+}
+
+.social-media {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media li {
+  margin: 0.5rem 0;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.heading-4 {
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+.box-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+/* OUR CARS SECTION */
+.our-cars-section {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20rem;
+}
+.our-cars {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+.our-car {
+  border-radius: 12px;
+  width: 35rem;
+  border: 1px solid #dddddd;
+}
+.our-car-text-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.our-car-name {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.info-icon {
+  font-size: 2.4rem;
+  color: #5300bc;
+  cursor: pointer;
+}
+.our-car-price-div {
+  border-top: 1px solid #dddddd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1rem 2rem;
+}
+.per-day {
+  font-size: 1.6rem;
+  color: #353434;
+}
+.price {
+  font-size: 2.4rem;
+  color: #202020;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.our-car a {
+  border: 1px solid #333;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+  border-radius: 9px;
+}
+.our-car a:hover {
+  color: #fff;
+  background-color: #333;
+}
+.our-car-img {
+  height: 20rem;
+  width: 100%;
+  object-fit: contain;
+}
+/* ABSOLUTE MENU */
+.absolute-div {
+  width: 0%; /* 0%*/
+  height: 100vh;
+  background-color: #333333f8;
+  position: absolute;
+  top: 0;
+  right: -40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s;
+}
+.absolute-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.menu-heading {
+  color: #a494b9;
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.absolute-item {
+  color: #dddddd;
+  font-weight: 600;
+  font-size: 3rem;
+}
+.close-icon-div {
+  width: 100%;
+  text-align: end;
+  padding-right: 4rem;
+  padding-top: 1rem;
+}
+.close-icon {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.id {
+  font-size: 1.6rem;
+}
+/* RENT CAR POPUP SECTION */
+.rent-car-popup-section {
+  width: 0%; /* Initial width to hide */
+  max-width: 100%; /* Ensure it doesn't exceed 100% of the viewport */
+  height: 60rem;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 9rem;
+  z-index: 1000; /* Ensure it's in front of other elements */
+  box-shadow: 0 0px 18px rgba(0, 0, 0, 0.5);
+  border-radius: 14px;
+  overflow: hidden;
+  opacity: 0; /* Initial opacity to hide */
+  transform: translateX(-50%);
+  transition: width 0.4s ease, opacity 0.4s ease; /* Smooth transition */
+}
+
+.rent-car-popup-section.show {
+  width: 80%; /* Width when visible */
+  opacity: 1; /* Full opacity when visible */
+}
+
+.rent-car-popup-section.hide {
+  width: 0%; /* Width when hidden */
+  opacity: 0; /* Transparent when hidden */
+}
+.popup {
+  height: 100%;
+  padding-top: 1rem;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-heading {
+  font-size: 3rem;
+  color: #fff;
+}
+.popup-heading2 {
+  font-size: 3rem;
+  color: darkgreen;
+}
+.popup-form {
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #fff;
+  border: 5px solid #ddd;
+  border-radius: 12px;
+}
+
+.car-name {
+  font-size: 2.8rem;
+  color: #ddd;
+  font-weight: 500;
+}
+.reserve-btn {
+  color: #202020;
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 0 0px 9px rgba(255, 255, 255, 0.3);
+  transition: all 0.4s;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.reserve-btn:hover {
+  scale: 1.1;
+}
+.popup-icon {
+  height: 4rem;
+  width: 4rem;
+  color: #fff;
+  cursor: pointer;
+  align-self: end;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  transition: all 0.4s;
+}
+.popup-icon:hover {
+  color: rgb(245, 162, 162);
+}
+.popup-text {
+  color: darkolivegreen;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.map iframe {
+  width: 80%;
+  height: 300px; /* Adjust the height if needed */
+  border: 0;
+  border-radius: 10px; /* Add some border-radius if needed */
+}
+.back-btn {
+  align-self: center;
+}

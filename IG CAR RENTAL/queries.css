@@ -1,0 +1,264 @@
+@media (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1250px) {
+  .about-us-text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1040px) {
+  .about-us-text {
+    font-size: 1.9rem;
+  }
+  .about-us-img {
+    width: 80%;
+    /* height: 80%; */
+  }
+  html {
+    font-size: 48%;
+  }
+  .our-cars {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .map-container {
+    max-width: 90rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .about-us-text {
+    font-size: 1.8rem;
+  }
+  .car-name {
+    font-size: 2.8rem;
+  }
+  .car-img {
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .explore-cars {
+    grid-template-columns: 1fr;
+  }
+  .about-us {
+    grid-template-columns: 1fr;
+  }
+  .about-text-div {
+    grid-row: 1;
+
+    height: 100%;
+    display: flex;
+
+    margin-bottom: 4rem;
+    padding: 0 3rem;
+  }
+  .about-us-img {
+    justify-self: center;
+    margin-left: 0;
+    width: 94%;
+    height: 50rem;
+  }
+  .about-us-text {
+    font-size: 2rem;
+  }
+  .menu {
+    display: none;
+  }
+  .last-child {
+    display: none;
+  }
+  .phone-menu {
+    display: block;
+  }
+  .home-article {
+    grid-template-columns: 1fr;
+  }
+  .home-article-text {
+    padding: 0 9rem;
+    margin-bottom: 4rem;
+  }
+  .footer-section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .box1,
+  .box-2,
+  .box-3 {
+    border: none;
+  }
+  .box-3 {
+    grid-column: span 2;
+    border-top: 2px solid #5300bc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .explore-cars {
+    margin-top: 0rem;
+  }
+  .box-2,
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map-section {
+    grid-template-columns: 1fr;
+  }
+  .map-container {
+    max-width: 60rem;
+  }
+  .form-div {
+    background-color: #20202013;
+    height: 45rem;
+    border: 2px solid #333;
+    border-bottom: none;
+    border-radius: 0;
+  }
+  .map-div {
+    height: 45rem;
+    border: 2px solid #333;
+
+    border-radius: 0;
+  }
+  .error {
+    text-align: center;
+    font-size: 2.4rem;
+    color: red;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 580px) {
+  .our-cars {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  .logo-div {
+    margin-top: 0;
+  }
+  .home-article-text {
+    padding: 0 6.5rem;
+    margin-bottom: 4rem;
+  }
+  .heading-primary {
+    font-size: 4rem;
+  }
+  .home-text {
+    font-size: 1.9rem;
+  }
+  .explore-cars {
+    row-gap: 3rem;
+  }
+  .about-us-section {
+    margin-top: 8.6rem;
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 479px) {
+  .map-container {
+    max-width: 35rem;
+  }
+  .rent-car-popup-section {
+    width: 45rem;
+
+    left: 50%;
+    transform: translate(-50%, 1%);
+    border-radius: 14px;
+  }
+  .popup-text {
+    color: darkolivegreen;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .popup-heading,
+  .popup-heading2 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 440px) {
+  .about-us-text {
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 397px) {
+  .map-container {
+    max-width: 33rem;
+  }
+  .rent-car-popup-section {
+    width: 40rem;
+
+    left: 50%;
+    transform: translate(-50%, 1%);
+    border-radius: 14px;
+  }
+  .popup-text {
+    color: darkolivegreen;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .popup-heading,
+  .popup-heading2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 319px) {
+  .popup-text {
+    color: darkolivegreen;
+    margin-top: 13rem;
+    font-size: 2.1rem;
+    font-weight: bold;
+  }
+
+  .map {
+  }
+  .map iframe {
+    width: 80%;
+    height: 32rem; /* Adjust the height if needed */
+    border: 0;
+    border-radius: 10px; /* Add some border-radius if needed */
+  }
+  .car-name {
+    font-size: 2.4rem;
+  }
+  .rent-car-popup-section {
+    width: 40rem;
+    height: 57rem;
+    left: 50%;
+    transform: translate(-50%, 1%);
+    border-radius: 14px;
+  }
+  .popup-text {
+    color: darkolivegreen;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .popup-heading,
+  .popup-heading2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rent-car-popup-section {
+    width: 0%; /* Initial width to hide */
+    /* Adjust height for smaller screens */
+    max-height: 80vh; /* Ensure it doesn't exceed 80% of the viewport height */
+  }
+
+  .rent-car-popup-section.show {
+    width: 90%; /* Width when visible */
+  }
+}
